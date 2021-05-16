@@ -1,8 +1,5 @@
 FROM python:3.7.10
 
-RUN apt-get update ##[edited]
-RUN apt-get install ffmpeg libsm6 libxext6  -y
-
 ARG USERNAME=development
 RUN useradd -ms /bin/bash $USERNAME
 USER $USERNAME
